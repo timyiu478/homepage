@@ -1,0 +1,72 @@
+<html>
+   
+    <head>
+        <title>20028987D Home Page</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="icon" href="https://img.icons8.com/color/48/000000/corgi.png" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="dark light">
+    </head>
+    <body>
+        <div class="nav" id="mynav">
+            <a class="menu_icon" id="mymenu" onclick="menu();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a> 
+            <div id="logo">Yiu Kam Wing</div>
+            <a href="#about" id="home">Home</a>
+            <a href="#educate">Education</a>
+            <div class="dropdown">
+                <button onclick="window.location.href='#interest-id';" class="dropdown_interest_button">Interest  <i class="fa fa-caret-down"></i></button>
+                <div class="Interest_content">
+                    <a href="#gym">Gym</a>
+                    <a href="#game">Game</a>
+                    <a href="#music">Music</a>
+                    <a href="#book">Book</a>
+                </div>
+            </div>     
+            <a class="theme_icon" onclick="switch_theme_mode();return false;"><i class="fa fa-adjust fa-lg" aria-hidden="true"></i></a>
+        </div>
+        <div class="section">
+            <div class="introduction" id="about">
+                    <div class="myimage">
+                        <img id="myself" src="myimage.jpg" alt="my photo" title="my photo" width="210" height="210">
+                        <p id="name">Yiu Kam Wing</p>
+                        <p id="student">Bachelor Student</p>
+                        <p id="emial"><a href="mailto: 20028987D@connect.polyu.hk"><i class="fa fa-envelope" aria-hidden="true"></i> Contact me</a></p>
+                    </div>
+                    <div class="about">
+                        <p id="hi">Hello World!</p>
+                        <p>I am a year 3 bachelor student in <a href="https://www.comp.polyu.edu.hk/" target="_blank">Computing</a> at <a href="https://www.polyu.edu.hk/" target="_blank">Hong Kong Polytechnic University</a>.</p>
+                    </div>
+            </div>
+            <div class="education" id="educate">
+                <div class="title">
+                    <p>Education</p>
+                </div>
+                <div class="school">
+                    <p>
+                        <img src="polyu.svg" width="80" height="80">
+                        <a href="https://www.polyu.edu.hk/" target="_blank">The Hong Kong Polytechnic University</a><br>
+                        Bachelor Student in <a href="https://www.comp.polyu.edu.hk/" target="_blank">Computing</a><br>
+                        Since 2020; Hong Kong
+                    </p>
+                </div>
+                <div class="school">
+                    <p>
+                        <img src="hkcc.svg" width="80" height="80">
+                        <a href="https://www.hkcc-polyu.edu.hk/en/home/index.html" target="_blank">Hong Kong Community College</a><br>
+                        Associate Student in <a href="https://www.hkcc-polyu.edu.hk/tc/programmes/associate-degree/programmeDetails.php?sid=17" target="_blank">Information Technology</a><br>
+                        2018-2020; Hong Kong
+                    </p>    
+                </div>
+                
+            </div>
+            <div class="interest" id="interest-id">
+                <div class="title">
+                    <p>Interest</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

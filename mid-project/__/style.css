@@ -1,0 +1,275 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bkg-color);
+}
+
+.school img{
+    float: left;
+    padding-right: 30px;
+}
+
+.school{
+    padding-left: 30px;
+    overflow: auto;
+}
+
+.school p{
+    line-height: 30px;
+    overflow: auto;
+}
+
+.education,.interest{
+    padding: 30px 0px 0px 70px;
+}
+
+.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#name,#email{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    margin-bottom:0px;
+}
+
+.section .myimage a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#student{
+    font-size: 15px;
+}
+
+#hi{
+    font-size: 20px;
+}
+
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+
+body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      --text-color: #eee;
+      --bkg-color: #121212;
+    }
+    body.light-theme {
+      --text-color: #222;
+      --bkg-color: #fff;
+    }
+  }
+
+.nav{
+    top:0;
+    margin-top: 10px;
+    width: 100%;
+    position: sticky;
+    border-bottom: 1.5px inset gray;
+    opacity: 80%;
+    min-height: 50px;
+}
+
+.section{
+    width:100%;
+    overflow:auto;
+}
+
+.section .introduction{
+    padding-top: 100px;
+    overflow: auto;
+}
+
+p{
+    color: var(--text-color);
+}
+
+
+.section .about a, .school a{
+    font-size: larger;
+    text-decoration: none;
+    color:rgb(45, 81, 245);
+}
+
+.section .introduction .myimage{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.section .introduction .myimage #myself{
+    border-radius: 50%;
+}
+
+.section .introduction .about{
+    float: left;
+    width: 70%;
+}
+
+
+
+#logo{
+    color: var(--text-color);
+    float: left;
+    border: 2px solid var(--text-color);
+    border-radius: 12px;
+    padding: 5px;
+    margin: 5px 15px;
+    font-size: 20px;
+}
+
+.nav a{
+    float: left;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.dropdown{
+    float: left;
+    display: block;
+}
+
+.dropdown .dropdown_interest_button{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    padding: 15px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+.nav a:visited{
+    color: var(--text-color);
+}
+
+.dropdown .dropdown_interest_button:hover{
+    font-weight: bolder;
+}
+
+.dropdown:hover  .interest_content{
+    display: block;
+}
+
+.interest_content {
+    display: none;
+    position: absolute;
+    background-color: var(--bkg-color);
+    min-width: 80px;
+    z-index: 1;
+    margin: 0px 5px;
+}
+
+.interest_content a{
+    float: none;
+    color: var(--text-color);
+    padding: 10px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.nav .menu_icon{
+    color: var(--text-color);
+    display: none;
+}
+
+.nav .theme_icon{
+    color: var(--text-color);
+    float: right;
+    margin: 2px 0px;
+}
+
+a:hover{
+    font-weight: bolder;
+}
+
+a:active{
+    color:cornflowerblue;
+}
+
+@media screen and (max-width: 700px) {
+    .nav a, .dropdown .dropdown_interest_button{
+        display: none;
+    }
+    .nav a.menu_icon{
+        float:left;
+        display: block;
+    }
+
+    .nav .theme_icon{
+        display: block;
+    }
+
+    .section .introduction .myimage{
+        float: none;
+        width: 100%;
+    }
+
+    .section .introduction .about{
+        float: none;
+        width: 100%;
+        font-size:smaller;
+    }
+
+    .education{
+        font-size: smaller;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .nav.responsive {position: sticky;}
+
+    .nav.responsive a {
+      float: none;
+      display: block;
+    }
+
+    .nav.nav.responsive .menu_icon{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .nav.nav.responsive #logo{
+        position: absolute;
+        left: 73px;
+        top: 0; 
+    }
+
+    .nav.nav.responsive .theme_icon{
+        position: absolute;
+        right:0;
+        top: 0; 
+    }
+
+    .nav.responsive #home{
+        padding-top: 60px;
+    }
+
+    .nav.responsive .dropdown {
+        float: none;
+    }
+    .nav.responsive .interest_content {
+        position: relative;
+    }
+    .nav.responsive .dropdown .dropdown_interest_button{
+      display: block;
+      width: 100%;
+    }
+    .education,.interest{
+        padding:0;
+    }
+
+  }

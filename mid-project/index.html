@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>20028987D Home Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="https://img.icons8.com/color/48/000000/corgi.png" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="dark light">
+    </head>
+    <body>
+        <div id="loading">Loading</div>
+        <span id="top"></span>
+        <div class="nav" id="mynav">
+            <a class="menu_icon" id="mymenu" onclick="menu();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+            <div id="logo">Yiu Kam Wing</div>
+            <a href="#top" id="nav_home">Home</a>
+            <a href="#educate" id="nav_education">Education</a>
+            <div class="dropdown">
+                <button onclick="window.location.href='#interest-id';" class="dropdown_interest_button" id="nav_interests">Interests  <i class="fa fa-caret-down"></i></button>
+                <div class="interest_content">
+                    <a id="nav_gym" href="#interest-id">Gym</a>
+                    <a id="nav_game" href="#game">Game</a>
+                    <a id="nav_music" href="#music">Music</a>
+                </div>
+            </div>
+            <div id="side-project">
+                <a href="side-project.html">Side Projects</a>
+            </div>
+            <a class="theme_icon" onclick="switch_theme_mode();return false;"><i title="click to change theme mode." class="fa fa-adjust fa-lg" aria-hidden="true"></i></a>
+            <div class="color-class">
+                <span>
+                    <input type="color" id="font-color" name="font-color" value="#e66465" oninput="change_font_color()">
+                    <label for="font-color">Font Color</label>
+                </span>
+                <span>
+                    <input type="color" id="bg-color" name="bg-color" value="#f6b73c" oninput="change_bg_color()">
+                    <label for="bg-color">Background Color</label>
+                </span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="introduction" id="about">
+                    <div class="myimage">
+                        <img id="myself" src="myimage.jpg" alt="my photo" title="my photo" width="210" height="210">
+                        <p id="name">Yiu Kam Wing</p>
+                        <p id="student">Bachelor Student</p>
+                        <p id="emial"><a href="mailto:20028987D@connect.polyu.hk"><i class="fa fa-envelope" aria-hidden="true"></i> Contact me</a></p>
+                    </div>
+                    <div class="about">
+                        <p id="hi">Welcome to my homepage!</p>
+                        <p>I am a year 3 bachelor student in <a href="https://www.comp.polyu.edu.hk/" target="_blank">Computing</a> at <a href="https://www.polyu.edu.hk/" target="_blank">Hong Kong Polytechnic University</a>.</p>
+                        <br>
+                        <a onclick="fact();return false;" id="fact-about-me">Random Facts About Me:</a>
+                        <p id="random-fact"></p>
+
+                    </div>
+            </div>
+            <hr>
+            <div class="education" id="educate">
+                <div class="title">
+                    <p>Education</p>
+                </div>
+                <div class="row">
+                    <div class="school">
+                        <p>
+                            <img alt="polyu.svg" src="polyu.svg">
+                            <a href="https://www.polyu.edu.hk/" target="_blank">The Hong Kong Polytechnic University</a><br>
+                            Bachelor Student in <a href="https://www.comp.polyu.edu.hk/" target="_blank">Computing</a><br>
+                            2020 - Present ; Hong Kong
+                        </p>
+                    </div>
+                    <div class="school">
+                        <p>
+                            <img alt="hkcc.svg" src="hkcc.svg">
+                            <a href="https://www.hkcc-polyu.edu.hk/en/home/index.html" target="_blank">Hong Kong Community College</a><br>
+                            Associate Student in <a href="https://www.hkcc-polyu.edu.hk/tc/programmes/associate-degree/programmeDetails.php?sid=17" target="_blank">Information Technology</a><br>
+                            2018 - 2020 ; Hong Kong
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="interest" id="interest-id">
+                <div class="title">
+                    <p>Interests</p>
+                    <div class="Gym" id="gym-id">
+                        <button class="collapsible">Gym</button>
+                        <div class="content">
+                            <div class="gym-program">
+                                <p>
+                                    Due to the covid-19 pandemic situation in Hong Kong, all gym rooms in hong kong is closed.
+                                    Therefore, I do workout at street now. Here is my latest workout program.
+                                </p>
+                                <div style="overflow-x:auto;">
+                                    <table>
+                                        <caption><strong>Strert Workout Program</strong></caption>
+                                        <tr>
+                                            <th>Sunday</th>
+                                            <th>Monday</th>
+                                            <th>Tuesday</th>
+                                            <th>Wednesday</th>
+                                            <th>Thursday</th>
+                                            <th>Friday</th>
+                                            <th>Saturday</th>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td><ol>
+                                                <li>pull up</li>
+                                                <li>stiff arm pulldown</li>
+                                                <li>deadlift</li>
+                                                <li>chin up </li>
+                                            </ol>
+                                            </td>
+                                            <td>&nbsp;</td>
+                                            <td><ol>
+                                                <li>dip</li>
+                                                <li>push up</li>
+                                                <li>diamond push up</li>
+                                                <li>bench dip</li>
+                                            </ol></td>
+                                            <td>&nbsp;</td>
+                                            <td><ol>
+                                                <li>Squat</li>
+                                                <li>lunge</li>
+                                                <li>Pistol squat</li>
+                                            </ol></td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="gymroom">
+                                <p>
+                                   I am a member in <a href="https://www.instagram.com/ofma.hk/" target="_blank">Origin Fitness & Martial Arts</a>.
+                                   Before the gym room is closed, I usually go there 2 - 3 times per week. The people are nice in there. Also, the employee won't hard sell you.
+                                   You can do workout in there without disturbtion. If you are looking for a gym room, I would recommend you to join this gym room.
+                                </p>
+                                <iframe src="https://www.instagram.com/p/CHKoFPWjl69/embed" style="border:none;" height="320" width="400" title="Origin Fitness & Martial Arts" sandbox></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Game" id="game-id">
+                        <button  id="game" class="collapsible">Game</button>
+                        <div class="content">
+                            <p>Recently, I love to play <a href="https://www.playgwent.com/en/" target="_blank">Gwent</a>.
+                                GWENT is a competitive card game developed by CD PROJEKT RED — creators of The Witcher 3: Wild Hunt. In GWENT, gamers clash with friends in fast-paced duels that combine skill-based play with bluffing, and careful deck construction. The game is played over a best-of-three series of rounds, as players unleash their hand by slinging spells and diverse units with special abilities, and use clever tricks to deceive their opponents.
+                            </p>
+                            <p>My favorite card is <strong>Gezras of Leyda</strong>.</p>
+
+
+                                    
+                                        <div class="card">
+                                            <div class="face front">
+                                                <img alt="card_back.png" src="card_back.png" width="200" height="300" id="card-back">
+                                            </div>
+                                            <div class="face back">
+                                                <img alt="Gwent_cardart_scoiatael_gezras_full.png" src="Gwent_cardart_scoiatael_gezras_full.png" width="200" height="300">
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                        </div>
+                    </div>
+                    <div class="Music" id="music-id">
+                        <button id="music" class="collapsible">Music</button>
+                        <div class="content" id="music-content">
+                            <p>Here is some song I recently listen.</p>
+                            <div><h2 id="song-name">Playing Song: </h2></div>
+                            <div class="container-container">
+                                <div class="container">
+                                    <img alt="lam.jpg" src="lam.jpg" class="image">
+                                    <div class="middle">
+                                    <div class="img-button"><img alt="play.svg" ondblclick="playsong(1)" src="play.svg" class="image" id="lam-play"></div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <img alt="eric.png" src="eric.png" class="image" id="eric">
+                                    <div class="middle">
+                                    <div class="img-button"><img alt="play.svg" ondblclick="playsong(2)" src="play.svg" class="image" id="eric-play"></div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <img alt="dear-jane.jpg" src="dear-jane.jpg" class="image" id="jane">
+                                    <div class="middle">
+                                    <div class="img-button"><img alt="play.svg" ondblclick="playsong(3)" src="play.svg" class="image" id="jane-play"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><small id="dbclick">(Double Click the image to play/pause the song)</small></p>
+                        </div>
+                        <audio id="song">
+                            <source src="1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div><button onclick="topFunction()" class="go_top_button"><i id="arrow" class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></button>
+                
+                <div class="copyright">
+                    <p>Copyright © 2021 <span>Yiu Kam Wing</span></p>
+                </div>
+
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "none"){
+                  content.style.display = "block";
+                } else {
+                  content.style.display = "none";
+                }
+              });
+
+              var song = document.getElementById("song");
+
+            song.onended = function(){
+                var lam_img = document.getElementById("lam-play");
+                var eric_img = document.getElementById("eric-play");
+                var jane_img = document.getElementById("jane-play");
+
+                console.log(lam_img.src);
+                console.log(lam_img.src.substr(47,9));
+
+                if(lam_img.src.substr(47,9) == "pause.svg"){
+                    lam_img.src = "play.svg";
+                }
+                if(eric_img.src.substr(47,9) == "pause.svg"){
+                    eric_img.src = "play.svg";
+                }
+                if(jane_img.src.substr(47,9) == "pause.svg"){
+                    jane_img.src = "play.svg";
+                }
+            }
+
+            }
+        </script>
+        <script src="script.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

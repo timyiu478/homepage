@@ -1,0 +1,82 @@
+<html lang="en">
+   
+    <head>
+        <title>20028987D Home Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="side-project.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="https://img.icons8.com/color/48/000000/corgi.png" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="dark light">
+    </head>
+    <body>
+        <div id="loading">Loading</div>
+        <div class="nav" id="mynav">
+            <a class="menu_icon" id="mymenu" onclick="menu();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a> 
+            <div id="logo">Yiu Kam Wing</div>
+            <a href="index.html#top" id="home">Home</a>
+            <a href="index.html#educate">Education</a>
+            <div class="dropdown">
+                <button onclick="window.location.href='index.html#interest-id';" class="dropdown_interest_button">Interests  <i class="fa fa-caret-down"></i></button>
+                <div class="Interest_content">
+                    <a href="index.html#gym">Gym</a>
+                    <a href="index.html#game">Game</a>
+                    <a href="index.html#music">Music</a>
+                </div>
+            </div>
+            <div id="side-project">
+                <a href="#side-project" style="text-decoration: underline;">Side Projects</a>    
+            </div>    
+            <a class="theme_icon" onclick="switch_theme_mode();return false;"><i class="fa fa-adjust fa-lg" aria-hidden="true"></i></a>
+            <div class="color-class">
+                <span>
+                    <input type="color" id="font-color" name="font-color" value="#e66465" oninput="change_font_color()">
+                    <label for="font-color">Font Color</label>
+                </span>
+                <span>
+                    <input type="color" id="bg-color" name="bg-color" value="#f6b73c" oninput="change_bg_color()">
+                    <label for="bg-color">Background Color</label>
+                </span>
+            </div>  
+        </div>
+        <div id="projects">
+            <div class="project">
+                <img src="cat.png" class="img" style="margin-right:3%;float: left;width:130px;height:130px">
+                <div style="float: left;">
+                    <h2>Pet Online Shop</h2>
+                    <p>with <em>Yiu Kam Wing</em></p>
+                    <p>Url: <a href="https://pet-shopping-20028987d.web.app/">https://pet-shopping-20028987d.web.app/</a></p>
+                </div>
+               
+            </div>
+            <hr>
+            <div class="project">
+                <img src="times_game.png" class="img" style="margin-right:3%;float: left; width:130px;height:130px">
+                <div style="float: left;">
+                    <h2>Multiplication Game</h2>
+                    <p>with <em>Yiu Kam Wing</em></p>
+                    <p>Url: <a href="https://timyiu478.github.io/comp3423ass1.github.io/index.html">https://timyiu478.github.io/comp3423ass1.github.io/index.html</a></p>
+                </div>
+              
+            </div>
+            <hr>
+            <div class="project">
+                <img src="camera.png" class="img" style="margin-right:3%;float: left; width:130px;height:130px">
+                <div style="float: left;">
+                    <h2>Digital Toy Camera User Manual</h2>
+                    <p>with <em>Yiu Kam Wing</em></p>
+                    <p>Url: <a href="https://timyiu478.github.io/omp3423ass3usermanual.github.io/">https://timyiu478.github.io/omp3423ass3usermanual.github.io/</a></p>
+                </div>
+              
+            </div>
+            <hr>
+            <h1><em>Coming Soon...</em></h1>
+            <br>
+            <br>
+            <br>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        </div>
+        <button onclick="topFunction()" class="go_top_button"><i id="arrow" class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></button>    
+        <script src="script.js"></script> 
+        <script src="side-project.js"></script> 
+    </body>
